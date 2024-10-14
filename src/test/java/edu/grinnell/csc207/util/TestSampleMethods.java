@@ -52,6 +52,31 @@ public class TestSampleMethods {
       assertEquals(0, SampleMethods.sum(values), "Sum of extreme values");
     }
 
+  @Test
+  void testExptWithLoop() {
+    int expected = 1;
+    for (int power = 0; power <= 10; power++) {
+        assertEquals(expected, SampleMethods.expt(2, power), "Testing expt with base 2 and power " + power);
+        expected *= 2;
+    }
+  }
+
+  @Test
+  void testExptMultipleBases() {
+      int[] bases = {2, -2, 3, -3};
+      for (int base : bases) {
+          int expected = 1;
+          for (int power = 0; power <= 5; power++) {
+              assertEquals(expected, SampleMethods.expt(base, power), 
+                          "Testing expt with base " + base + " and power " + power);
+              expected *= base;
+          }
+      }
+  }
+
+
+
+
 } // class TestSampleMethods
 
 
