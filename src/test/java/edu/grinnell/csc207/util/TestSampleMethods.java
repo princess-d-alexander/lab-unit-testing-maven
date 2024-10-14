@@ -1,15 +1,13 @@
 package edu.grinnell.csc207.util;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
-
 import org.junit.jupiter.api.Test;
 
 /**
  * Tests of the sample methods.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Princess Alexander
  */
 public class TestSampleMethods {
   /**
@@ -23,7 +21,9 @@ public class TestSampleMethods {
   /**
    * A test that should fail.
    */
-  void sampleFailingTest() {
-    assertEquals(2, 3);
-  } // sampleFailingTest()
+  // void sampleFailingTest() {
+  //   assertEquals(2, 3);
+  // } // sampleFailingTest()
+
 } // class TestSampleMethods
+
